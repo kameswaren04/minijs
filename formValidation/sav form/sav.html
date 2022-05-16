@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sav.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+<div class="container1" >
+<h2 class="lbl">Application Form</h2>
+<form name="myform">
+  <label for="fname" class="lbl">First name:</label>
+  <input type="text" class="frm1" id="fname" name="fname" selected  required><br>
+  <label for="lname">Last name:</label>
+  <input type="text" class="frm1" id="lname" name="lname"><br>
+  <label for="PhoneNo:">Phone No:</label>
+  <input type="text" class="frm1" id="pno" name="pno" ><br>
+  <label for="Email">Email:</label>
+  <input type="email" class="frm1" id="email" name="email" ><br>
+  <label for="pwd">Password:</label>
+  <input type="password" class="frm1" id="pwd" name="pwd" required>
+  <input type="submit" class="sbm" value="Submit" onclick="validation()">
+  <input type="reset" class="sbm" onclick="msg1()">
+</form>
+</div> 
+</div>
+<script src="./form.js"></script>
+</body>
+</html>

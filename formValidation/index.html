@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation - Easy Tutorials YouTube Channel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></script>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <i class="fas fa-paper-plane"></i>
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+        <span id="email-error"></span>
+      </div>   
+
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+        <span id="phone-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" id="contact-password" onkeyup="validatePassword()"  >
+        <span id="password-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" id="contact-confpassword" onkeyup="validateConfPassword()" >
+        <span id="password2-error"></span>
+      </div>
+
+      <!-- <div class="input-group">
+        <label>Your Message</label>
+        <textarea rows="5" placeholder="Enter your message"></textarea>
+        <span id="message-error">Message is required</span>
+      </div> -->
+
+      <button>Submit</button>
+      <span id="submit-error">please fix error</span>
+      <button type="reset"  onclick="clear()">Reset</button>
+   
+    </form>
+
+
+    <!-- <div class="useful-links">
+      <a href="https://youtu.be/fz8bwvn9lA4">Watch Video</a>
+      <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1">Visit Channel</a>
+    </div> -->
+  
+  </div>
+
+  <script src="./script.js" ></script>
+   
+</body>
+</html>
